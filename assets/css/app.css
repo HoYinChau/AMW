@@ -2419,3 +2419,6 @@ width: 40% !important;
 .menu_bar{
     max-width: 95% !important;
 }
+.navbar-dark .navbar-nav .nav-link{
+    color: rgba(255,255,255,1) !important;
+}
