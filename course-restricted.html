@@ -38,10 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-0 main-navbar">
         <div class="container-xl menu_bar">
             <div class="collapse navbar-collapse" id="navbarsExample07XL">
-               <ul class="navbar-nav  mb-2 mb-lg-0 ">
-                    <li class="nav-item menu_link  mr-4">
-                        <a class="nav-link  grand-text" aria-current="page" href="#" style="letter-spacing: 2px !important;">Vip channel</a>
-                    </li>                    
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">                   
                     <li class="nav-item dropdown menu_link">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                             課程種類
@@ -52,9 +49,13 @@
                             </li>
                         </ul>
                     </li>
+                                        <li class="nav-item menu_link  ml-4">
+                        <a class="nav-link  grand-text" aria-current="page" href="#" style="letter-spacing: 2px !important;">星級頻道</a>
+                    </li> 
                     <form class="form-inline ml-4">
-                        <input class="form-control search_input" type="search" placeholder="搜尋" aria-label="Search">
-                        <button class="btn search_button" type="submit"><img class="search_icon" src="assets/icons/search.svg" width="20px" height="20px"></button>
+                        
+                        <input class="form-control search_input" id="search_input" type="search" name="search_input" placeholder="" aria-label="Search">
+                        
                     </form>
                 </ul>
             </div>
@@ -63,7 +64,7 @@
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav  mb-2 mb-lg-0 ">
                     <li class="nav-item mr-3">
-                        <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">成為導師</a>
+                        <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">成為名師</a>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">登入</a>
@@ -73,109 +74,8 @@
         </div>
     </nav>
         <main class="bg-dark">
-            <div class="container-fluid home-intro-bg   nav-overlap-div pt-md-100 pt-130">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="container-fluid container-xl course-instructor-intro">
-                            <div class="row d-flex align-items-center justify-content-center p-3">
-                                <div class="col-lg-2 col-md-3 col-sm-7 col-7 course-instructor-intro-profile-pic">
-                                    <img src="assets/images/instructors/tutor_7.png" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-6 col-sm-12 col-12 order-md-2 order-3 mt-md-0 mt-3 course-instructor-intro-content">
-                                    <h2 class="text-grey d-inline">Marcus Fung Hei Wing</h2>
-                                    <a href="#">
-                                        <i>
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                width="50px" height="50px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                                                <g>
-                                                    <path fill="#F3EAE0" d="M199.964,97.323v5.354c0.022-0.889,0.036-1.78,0.036-2.677C200,99.104,199.986,98.212,199.964,97.323z"/>
-                                                    <path fill="#F3EAE0" d="M149.982,13.371L149.982,13.371l-0.002-0.001C136.001,5.287,119.88,0.489,102.677,0.037H100V0.036h2.678
-                                                        C101.788,0.013,100.896,0,100,0c-0.896,0-1.788,0.013-2.678,0.036C80.119,0.488,64,5.286,50.018,13.37
-                                                        C20.841,30.24,0.98,61.425,0.036,97.323C0.013,98.212,0,99.104,0,100c0,0.896,0.013,1.788,0.036,2.677
-                                                        c0.944,35.898,20.805,67.083,49.982,83.953c13.981,8.083,30.101,12.881,47.304,13.333H100v0.001h-2.678
-                                                        C98.212,199.986,99.104,200,100,200c0.872,0,1.739-0.014,2.605-0.035h0.072c17.203-0.451,33.323-5.25,47.305-13.334v-0.002
-                                                        c29.178-16.871,49.037-48.055,49.98-83.952v-5.354C199.021,61.426,179.16,30.242,149.982,13.371z"/>
-                                                </g>
-                                                <g>
-                                                    <g opacity="0.8">
-                                                        <path fill="#FFFFFF" d="M125.258,118.318c6.149,2.299,11.922,5.384,17.116,9.212c3.267,2.305,6.297,4.892,9.103,7.72
-                                                            l-51.47-110.438V64.18L125.258,118.318z"/>
-                                                    </g>
-                                                    <g opacity="0.7">
-                                                        <path fill="#FFFFFF" d="M74.773,118.312l25.242-54.132V24.82L48.202,135.53c2.899-2.906,6.047-5.601,9.446-8.007
-                                                            C62.859,123.695,68.632,120.607,74.773,118.312"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <path fill="#FFFFFF" d="M156.609,152.305c-4.618-7.798-10.728-14.453-17.978-19.587c-2.915-2.14-6.04-4-9.272-5.61
-                                                            c-7.25-3.607-15.203-5.912-23.399-6.772v16.844c8.415,0.984,16.086,4.204,22.767,8.906c5.945,4.211,10.647,9.649,14.359,16.094
-                                                            h18.32C160.062,158.711,158.445,155.422,156.609,152.305"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <path fill="#FFFFFF" d="M70.688,127.078c-3.25,1.617-6.359,3.484-9.289,5.648c-7.258,5.125-13.485,11.78-18.18,19.58
-                                                            c-1.867,3.116-3.5,6.412-4.844,9.873h18.571c3.461-6.438,8.414-11.89,14.109-16.094c6.68-4.695,14.602-7.922,23.016-8.906v-16.844
-                                                            C85.718,121.195,77.859,123.484,70.688,127.078"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <polygon fill="#FFFFFF" points="102.749,131.396 100.469,131.396 99.555,131.396 97.273,131.396 94.07,131.396 94.07,140.406 
-                                                            94.07,143.28 96.96,143.28 103.062,143.28 105.952,143.28 105.952,140.406 105.952,131.396 		"/>
-                                                    </g>
-                                                </g>
-                                           </svg>
-                                        </i>
-                                    </a>
-                                    <a href="#">
-                                        <i>
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                width="50px" height="50px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                                                <g>
-                                                    <path fill="#F3EAE0" d="M199.964,97.323v5.354c0.022-0.889,0.036-1.78,0.036-2.677C200,99.104,199.986,98.212,199.964,97.323z"/>
-                                                    <path fill="#F3EAE0" d="M149.982,13.371L149.982,13.371l-0.002-0.001C136.001,5.287,119.88,0.489,102.677,0.037H100V0.036h2.678
-                                                        C101.788,0.013,100.896,0,100,0c-0.896,0-1.788,0.013-2.678,0.036C80.119,0.488,64,5.286,50.018,13.37
-                                                        C20.841,30.24,0.98,61.425,0.036,97.323C0.013,98.212,0,99.104,0,100c0,0.896,0.013,1.788,0.036,2.677
-                                                        c0.944,35.898,20.805,67.083,49.982,83.953c13.981,8.083,30.101,12.881,47.304,13.333H100v0.001h-2.678
-                                                        C98.212,199.986,99.104,200,100,200c0.872,0,1.739-0.014,2.605-0.035h0.072c17.203-0.451,33.323-5.25,47.305-13.334v-0.002
-                                                        c29.178-16.871,49.037-48.055,49.98-83.952v-5.354C199.021,61.426,179.16,30.242,149.982,13.371z"/>
-                                                </g>
-                                                <g>
-                                                    <g opacity="0.8">
-                                                        <path fill="#FFFFFF" d="M125.258,118.318c6.149,2.299,11.922,5.384,17.116,9.212c3.267,2.305,6.297,4.892,9.103,7.72
-                                                            l-51.47-110.438V64.18L125.258,118.318z"/>
-                                                    </g>
-                                                    <g opacity="0.7">
-                                                        <path fill="#FFFFFF" d="M74.773,118.312l25.242-54.132V24.82L48.202,135.53c2.899-2.906,6.047-5.601,9.446-8.007
-                                                            C62.859,123.695,68.632,120.607,74.773,118.312"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <path fill="#FFFFFF" d="M156.609,152.305c-4.618-7.798-10.728-14.453-17.978-19.587c-2.915-2.14-6.04-4-9.272-5.61
-                                                            c-7.25-3.607-15.203-5.912-23.399-6.772v16.844c8.415,0.984,16.086,4.204,22.767,8.906c5.945,4.211,10.647,9.649,14.359,16.094
-                                                            h18.32C160.062,158.711,158.445,155.422,156.609,152.305"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <path fill="#FFFFFF" d="M70.688,127.078c-3.25,1.617-6.359,3.484-9.289,5.648c-7.258,5.125-13.485,11.78-18.18,19.58
-                                                            c-1.867,3.116-3.5,6.412-4.844,9.873h18.571c3.461-6.438,8.414-11.89,14.109-16.094c6.68-4.695,14.602-7.922,23.016-8.906v-16.844
-                                                            C85.718,121.195,77.859,123.484,70.688,127.078"/>
-                                                    </g>
-                                                    <g opacity="0.9">
-                                                        <polygon fill="#FFFFFF" points="102.749,131.396 100.469,131.396 99.555,131.396 97.273,131.396 94.07,131.396 94.07,140.406 
-                                                            94.07,143.28 96.96,143.28 103.062,143.28 105.952,143.28 105.952,140.406 105.952,131.396 		"/>
-                                                    </g>
-                                                </g>
-                                           </svg>
-                                        </i>
-                                    </a>
-                                    <h5 class="text-grey">12 Video Lessons</h5>
-                                    <p class="text-white">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-5 col-5 order-md-3 order-2 course-instructor-intro-staff-pick p-lg-4">
-                                    <img src="assets/icons/staff-pick-badge-xl.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="container-fluid instructor-bg course-video-div">
+            <div class="container-fluid instructor-bg course-video-div  nav-overlap-div pt-md-100 pt-50">
                 <div class="row">
                     <div class="col-12">
                         <div class="container-fluid container-xl course-instructor-intro">
@@ -517,12 +417,13 @@
                     <div class="col-12">
                         <div class="container-fluid container-xl">
                             <div class="row">
-                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 order-md-1 order-2">
                                     <div class="row">
-                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 course-detail-tab-title d-flex ">
-                                            <a href="#" class="active "><h3 class="title mb-0">12 測留言</h3></a>
-                                            <a href="#" class=""><h3 class="title mb-0">教材資源一覽</h3></a>
-                                            <a href="#" class=""><h3 class="title mb-0">證書與測驗</h3></a>
+                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 course-detail-tab-title d-flex">
+                                            <a href="#" class="active"><h4 class="title mb-0">導師簡介</h4></a>
+                                            <a href="#" class=""><h4 class="title mb-0">學生留言</h4></a>
+                                            <a href="#" class=""><h4 class="title mb-0">教材資料庫</h4></a>
+                                            <a href="#" class=""><h4 class="title mb-0">證書與測驗</h4></a>
                                         </div>
                                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 course-detail-tab-setting">
                                             <a href="#">
@@ -561,108 +462,943 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pb-md-0 pb-5">
-                                </div>
-                                <div class="col-12 course-purchase-form py-50">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 pb-3">
-                                            <h5 class="text-center text-gold mb-3 letter-space-10 font-weight-bold hei-title">訂閱此課程解鎖以下內容</h5>
-                                            <hr class="bg-gold h-2 my-0">
-                                            <div class="ml-auto mr-auto w-25">
-                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
-                                            <div class="row">
-                                                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 order-md-1 order-2 payment-method-form">
                                                     <div class="row">
-                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                            <label for="card_number" class="form-label text-grey mb-0"><small>Card Number</small></label>
-                                                            <input type="text" class="form-control" id="card_number" placeholder="XXXX - XXXX - XXXX - XXXX">
-                                                        </div>
-                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                            <label for="card_holder_name" class="form-label text-grey mb-0"><small>Card Number</small></label>
-                                                            <input type="text" class="form-control" id="card_holder_name" placeholder="SURNAME / NAME">
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                            <label for="card_expiry" class="form-label text-grey mb-0"><small>Expiration Date</small></label>
-                                                            <input type="text" class="form-control" id="card_expiry" placeholder="MM/YY">
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                            <label for="card_security_code" class="form-label text-grey mb-0"><small>Security Code</small></label>
-                                                            <input type="text" class="form-control" id="card_security_code" placeholder="XXX">
-                                                        </div>
-                                                    </div>
+                    <div class="col-12">
+                        <div class="container-fluid container-xl course-instructor-intro">
+                            <div class="row d-flex align-items-center justify-content-center p-3">
+                                <div class="col-lg-4 col-md-6 col-sm-7 col-7 course-instructor-intro-profile-pic">
+                                    <img src="assets/images/instructors/tutor_7.png" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-6 col-sm-12 col-12 order-md-2 order-3 mt-md-0 mt-3 course-instructor-intro-content">
+                                    <h2 class="text-grey d-inline">Marcus Fung Hei Wing</h2>
+                                    <a href="#">
+                                        <i>
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                width="50px" height="50px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                <g>
+                                                    <path fill="#F3EAE0" d="M199.964,97.323v5.354c0.022-0.889,0.036-1.78,0.036-2.677C200,99.104,199.986,98.212,199.964,97.323z"/>
+                                                    <path fill="#F3EAE0" d="M149.982,13.371L149.982,13.371l-0.002-0.001C136.001,5.287,119.88,0.489,102.677,0.037H100V0.036h2.678
+                                                        C101.788,0.013,100.896,0,100,0c-0.896,0-1.788,0.013-2.678,0.036C80.119,0.488,64,5.286,50.018,13.37
+                                                        C20.841,30.24,0.98,61.425,0.036,97.323C0.013,98.212,0,99.104,0,100c0,0.896,0.013,1.788,0.036,2.677
+                                                        c0.944,35.898,20.805,67.083,49.982,83.953c13.981,8.083,30.101,12.881,47.304,13.333H100v0.001h-2.678
+                                                        C98.212,199.986,99.104,200,100,200c0.872,0,1.739-0.014,2.605-0.035h0.072c17.203-0.451,33.323-5.25,47.305-13.334v-0.002
+                                                        c29.178-16.871,49.037-48.055,49.98-83.952v-5.354C199.021,61.426,179.16,30.242,149.982,13.371z"/>
+                                                </g>
+                                                <g>
+                                                    <g opacity="0.8">
+                                                        <path fill="#FFFFFF" d="M125.258,118.318c6.149,2.299,11.922,5.384,17.116,9.212c3.267,2.305,6.297,4.892,9.103,7.72
+                                                            l-51.47-110.438V64.18L125.258,118.318z"/>
+                                                    </g>
+                                                    <g opacity="0.7">
+                                                        <path fill="#FFFFFF" d="M74.773,118.312l25.242-54.132V24.82L48.202,135.53c2.899-2.906,6.047-5.601,9.446-8.007
+                                                            C62.859,123.695,68.632,120.607,74.773,118.312"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <path fill="#FFFFFF" d="M156.609,152.305c-4.618-7.798-10.728-14.453-17.978-19.587c-2.915-2.14-6.04-4-9.272-5.61
+                                                            c-7.25-3.607-15.203-5.912-23.399-6.772v16.844c8.415,0.984,16.086,4.204,22.767,8.906c5.945,4.211,10.647,9.649,14.359,16.094
+                                                            h18.32C160.062,158.711,158.445,155.422,156.609,152.305"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <path fill="#FFFFFF" d="M70.688,127.078c-3.25,1.617-6.359,3.484-9.289,5.648c-7.258,5.125-13.485,11.78-18.18,19.58
+                                                            c-1.867,3.116-3.5,6.412-4.844,9.873h18.571c3.461-6.438,8.414-11.89,14.109-16.094c6.68-4.695,14.602-7.922,23.016-8.906v-16.844
+                                                            C85.718,121.195,77.859,123.484,70.688,127.078"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <polygon fill="#FFFFFF" points="102.749,131.396 100.469,131.396 99.555,131.396 97.273,131.396 94.07,131.396 94.07,140.406 
+                                                            94.07,143.28 96.96,143.28 103.062,143.28 105.952,143.28 105.952,140.406 105.952,131.396         "/>
+                                                    </g>
+                                                </g>
+                                           </svg>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i>
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                width="50px" height="50px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                <g>
+                                                    <path fill="#F3EAE0" d="M199.964,97.323v5.354c0.022-0.889,0.036-1.78,0.036-2.677C200,99.104,199.986,98.212,199.964,97.323z"/>
+                                                    <path fill="#F3EAE0" d="M149.982,13.371L149.982,13.371l-0.002-0.001C136.001,5.287,119.88,0.489,102.677,0.037H100V0.036h2.678
+                                                        C101.788,0.013,100.896,0,100,0c-0.896,0-1.788,0.013-2.678,0.036C80.119,0.488,64,5.286,50.018,13.37
+                                                        C20.841,30.24,0.98,61.425,0.036,97.323C0.013,98.212,0,99.104,0,100c0,0.896,0.013,1.788,0.036,2.677
+                                                        c0.944,35.898,20.805,67.083,49.982,83.953c13.981,8.083,30.101,12.881,47.304,13.333H100v0.001h-2.678
+                                                        C98.212,199.986,99.104,200,100,200c0.872,0,1.739-0.014,2.605-0.035h0.072c17.203-0.451,33.323-5.25,47.305-13.334v-0.002
+                                                        c29.178-16.871,49.037-48.055,49.98-83.952v-5.354C199.021,61.426,179.16,30.242,149.982,13.371z"/>
+                                                </g>
+                                                <g>
+                                                    <g opacity="0.8">
+                                                        <path fill="#FFFFFF" d="M125.258,118.318c6.149,2.299,11.922,5.384,17.116,9.212c3.267,2.305,6.297,4.892,9.103,7.72
+                                                            l-51.47-110.438V64.18L125.258,118.318z"/>
+                                                    </g>
+                                                    <g opacity="0.7">
+                                                        <path fill="#FFFFFF" d="M74.773,118.312l25.242-54.132V24.82L48.202,135.53c2.899-2.906,6.047-5.601,9.446-8.007
+                                                            C62.859,123.695,68.632,120.607,74.773,118.312"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <path fill="#FFFFFF" d="M156.609,152.305c-4.618-7.798-10.728-14.453-17.978-19.587c-2.915-2.14-6.04-4-9.272-5.61
+                                                            c-7.25-3.607-15.203-5.912-23.399-6.772v16.844c8.415,0.984,16.086,4.204,22.767,8.906c5.945,4.211,10.647,9.649,14.359,16.094
+                                                            h18.32C160.062,158.711,158.445,155.422,156.609,152.305"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <path fill="#FFFFFF" d="M70.688,127.078c-3.25,1.617-6.359,3.484-9.289,5.648c-7.258,5.125-13.485,11.78-18.18,19.58
+                                                            c-1.867,3.116-3.5,6.412-4.844,9.873h18.571c3.461-6.438,8.414-11.89,14.109-16.094c6.68-4.695,14.602-7.922,23.016-8.906v-16.844
+                                                            C85.718,121.195,77.859,123.484,70.688,127.078"/>
+                                                    </g>
+                                                    <g opacity="0.9">
+                                                        <polygon fill="#FFFFFF" points="102.749,131.396 100.469,131.396 99.555,131.396 97.273,131.396 94.07,131.396 94.07,140.406 
+                                                            94.07,143.28 96.96,143.28 103.062,143.28 105.952,143.28 105.952,140.406 105.952,131.396         "/>
+                                                    </g>
+                                                </g>
+                                           </svg>
+                                        </i>
+                                    </a>
+                                    <h5 class="text-grey">12 Video Lessons</h5>
+                                    <p class="text-white">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                    <div class="row course-comment-div" id="course-comment-div">
+                                        <div class="col-12">
+                                            <!-- Comment Section with Reply Thread Start -->
+                                            <div class="row pb-4 d-table comment-main-thread">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 comment-profile py-2 d-table-cell">
+                                                    <img src="assets/images/instructors/tutor_1.png" alt="">
+                                                    <div class="thread-line"></div>
                                                 </div>
-                                                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 order-md-2 order-1 payment-method pt-md-3 pb-3">
-                                                    <h5 class="text-gold mb-2 letter-space-10 font-weight-bold hei-title">選擇付款方式</h5>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="payment_method" id="payment_method_credit_card" checked>
-                                                        <label class="form-check-label text-gold font-weight-bold hei-title" for="payment_method_credit_card">
-                                                            信用卡
-                                                        </label>
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 comment-meta d-table-cell">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-grey mb-0">Kelvin Sun Ka Wan</h6>
+                                                            <h4 class="text-grey">课程学生</h4>
+                                                        </div>
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 comment-meta-btn d-flex align-items-center justify-content-center">
+                                                            <ul class="list-group list-group-horizontal list-unstyled">
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M126.211,94.91h-0.555H90.125c-1.266,0-2.18-1.574-2.18-2.84v-0.566c0-1.281,0.914-1.5,2.18-1.5h35.828
+                                                                                    V68.836c0-17.551-10.906-31.785-24.531-31.785c-13.617,0-24.516,14.234-24.516,31.785v25.562
+                                                                                    c-7.363,0.219-13.156,5.02-13.156,10.66c0,5.781,5.348,10.691,12.629,10.691h49.832c7.281,0,13.195-4.645,13.195-10.422
+                                                                                    C139.406,99.543,133.492,94.91,126.211,94.91z"/>
+                                                                                <path fill="#C7C7C7" d="M99.297,166.285c0.383,2.258,3.625,2.012,4-0.246c0,0,7.609-44.172,7.633-44.172H91.664
+                                                                                    C91.68,121.867,99.297,166.285,99.297,166.285z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.773,0,0,44.773,0,100s44.773,100,100,100s100-44.773,100-100S155.227,0,100,0z M99.992,190.465
+                                                                                    c-49.965,0-90.469-40.5-90.469-90.473c0-49.957,40.504-90.461,90.469-90.461c49.977,0,90.477,40.504,90.477,90.461
+                                                                                    C190.469,149.965,149.969,190.465,99.992,190.465z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M98.793,83.277v0.172C92.17,57.75,50.559,60.98,55.133,96.793c3.041,23.793,43.637,53.312,43.637,53.312
+                                                                                    s40.602-29.52,43.648-53.312C146.996,60.98,105.414,57.578,98.793,83.277z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.768,0,0,44.773,0,100s44.768,100,100,100c55.23,0,100-44.773,100-100S155.23,0,100,0z
+                                                                                     M100.002,190.473c-49.969,0-90.473-40.508-90.473-90.477c0-49.965,40.504-90.465,90.473-90.465
+                                                                                    c49.967,0,90.467,40.5,90.467,90.465C190.469,149.965,149.969,190.473,100.002,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M117.371,89.84c11.086,0,20.102-9.02,20.102-20.113c0-11.078-9.016-20.098-20.102-20.098
+                                                                                    c-11.082,0-20.098,9.02-20.098,20.098c0,0.914,0.078,1.797,0.188,2.668L81.5,84.492c-3.277-2.309-7.27-3.688-11.57-3.688
+                                                                                    c-11.09,0-20.105,9.016-20.105,20.102s9.016,20.102,20.105,20.102c4.18,0,8.039-1.277,11.27-3.457l16.32,12.863
+                                                                                    c-0.156,0.984-0.246,1.992-0.246,3.016c0,11.094,9.016,20.117,20.098,20.117c11.086,0,20.102-9.023,20.102-20.117
+                                                                                    c0-11.074-9.016-20.094-20.102-20.094c-5.566,0-10.613,2.273-14.258,5.945l-14.371-11.328c0.828-2.195,1.281-4.562,1.281-7.047
+                                                                                    c0-2.348-0.414-4.594-1.152-6.688l13.996-10.613C106.523,87.438,111.668,89.84,117.371,89.84z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                     M99.992,190.477c-49.965,0-90.469-40.512-90.469-90.48c0-49.961,40.504-90.469,90.469-90.469
+                                                                                    c49.977,0,90.477,40.508,90.477,90.469C190.469,149.965,149.969,190.477,99.992,190.477z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.77,0,0,44.773,0,100s44.77,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                    M99.992,190.469c-49.973,0-90.465-40.5-90.465-90.469c0-49.965,40.492-90.469,90.465-90.469c49.969,0,90.473,40.504,90.473,90.469
+                                                                                   C190.465,149.969,149.961,190.469,99.992,190.469z"/>
+                                                                               <path fill="#C7C7C7" d="M109.75,73.871V62.297L64.258,76.961l45.492,14.688v-8.102c13.488,3.324,15.734,10.625,15.734,18.363
+                                                                                   c0,11.488-3.219,23.258-30.902,23.258c-0.402,0-5.816,0.012-11.266,0.012c-5.578,0.012-11.227,0.023-11.656,0.023
+                                                                                   c-2.582,0-4.695,2.102-4.695,4.695c0,2.586,2.105,4.699,4.688,4.699c0.438,0,6.074-0.012,11.656-0.023
+                                                                                   c5.457-0.012,10.844-0.012,11.262-0.012c27.059,0,40.312-10.984,40.312-32.652C134.883,83.805,123.238,76.621,109.75,73.871z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M133.84,67.188H66.277c-3.988,0-6.008,2.859-6.008,6.785v8.145c0,3.926,2.02,7.145,6.008,7.145h67.562
+                                                                                    c3.98,0,7.359-3.219,7.359-7.145v-8.145C141.199,70.047,137.82,67.188,133.84,67.188z"/>
+                                                                                <path fill="#C7C7C7" d="M122.797,133.398h-6.129V94.164h-11.043v39.234h-7.348V94.164H87.238v39.234h-7.348V94.164h-9.812v44.988
+                                                                                    c0,3.977,2.73,6.512,6.711,6.512h46.715c3.98,0,7.875-2.535,7.875-6.512V94.164h-8.582V133.398z"/>
+                                                                                <path fill="#C7C7C7" d="M95.527,63.516h12.684c3.066,0,5.551-2.453,5.551-5.523c0-3.062-2.484-5.512-5.551-5.512H95.527
+                                                                                    c-3.082,0-5.574,2.449-5.574,5.512C89.953,61.062,92.445,63.516,95.527,63.516z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                     M99.992,190.473c-49.957,0-90.473-40.508-90.473-90.477c0-49.965,40.516-90.465,90.473-90.465c49.977,0,90.48,40.5,90.48,90.465
+                                                                                    C190.473,149.965,149.969,190.473,99.992,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="comment-date mb-0 text-white">8 日前</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="payment_method" id="payment_method_debit_card">
-                                                        <label class="form-check-label text-gold font-weight-bold hei-title" for="payment_method_debit_card">
-                                                            轉賬卡
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="payment_method" id="payment_method_paypal">
-                                                        <label class="form-check-label text-gold font-weight-bold hei-title" for="payment_method_paypal">
-                                                            PayPal
-                                                        </label>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-25">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                            <p class="text-white pt-2 mb-0 comment-content">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 py-4">
-                                            <hr class="bg-gold h-2 my-0">
-                                            <div class="ml-auto mr-auto w-25">
-                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
-                                            </div>
-                                            <h5 class="text-center text-gold my-3 letter-space-10 font-weight-bold hei-title">請選訂閱內容</h5>
-                                        </div>
-                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 pb-4">
-                                            <div class="row d-flex align-items-center">
-                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 course-selection">
-                                                    <div class="form-check form-switch">
-                                                        <input class="form-check-input" type="checkbox" id="course_name_checkbox" checked>
+                                            <!-- Comment Section End -->
+                                            <!-- Comment Section Start -->
+                                            <div class="row pb-4 ml-lg-5 ml-3">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 comment-profile py-2">
+                                                    <img src="assets/images/instructors/tutor_1.png" alt="">
+                                                </div>
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 comment-meta">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-grey mb-0">Kelvin Sun Ka Wan</h6>
+                                                            <h4 class="text-grey">课程学生</h4>
+                                                        </div>
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 comment-meta-btn d-flex align-items-center justify-content-center">
+                                                            <ul class="list-group list-group-horizontal list-unstyled">
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M126.211,94.91h-0.555H90.125c-1.266,0-2.18-1.574-2.18-2.84v-0.566c0-1.281,0.914-1.5,2.18-1.5h35.828
+                                                                                    V68.836c0-17.551-10.906-31.785-24.531-31.785c-13.617,0-24.516,14.234-24.516,31.785v25.562
+                                                                                    c-7.363,0.219-13.156,5.02-13.156,10.66c0,5.781,5.348,10.691,12.629,10.691h49.832c7.281,0,13.195-4.645,13.195-10.422
+                                                                                    C139.406,99.543,133.492,94.91,126.211,94.91z"/>
+                                                                                <path fill="#C7C7C7" d="M99.297,166.285c0.383,2.258,3.625,2.012,4-0.246c0,0,7.609-44.172,7.633-44.172H91.664
+                                                                                    C91.68,121.867,99.297,166.285,99.297,166.285z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.773,0,0,44.773,0,100s44.773,100,100,100s100-44.773,100-100S155.227,0,100,0z M99.992,190.465
+                                                                                    c-49.965,0-90.469-40.5-90.469-90.473c0-49.957,40.504-90.461,90.469-90.461c49.977,0,90.477,40.504,90.477,90.461
+                                                                                    C190.469,149.965,149.969,190.465,99.992,190.465z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M98.793,83.277v0.172C92.17,57.75,50.559,60.98,55.133,96.793c3.041,23.793,43.637,53.312,43.637,53.312
+                                                                                    s40.602-29.52,43.648-53.312C146.996,60.98,105.414,57.578,98.793,83.277z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.768,0,0,44.773,0,100s44.768,100,100,100c55.23,0,100-44.773,100-100S155.23,0,100,0z
+                                                                                        M100.002,190.473c-49.969,0-90.473-40.508-90.473-90.477c0-49.965,40.504-90.465,90.473-90.465
+                                                                                    c49.967,0,90.467,40.5,90.467,90.465C190.469,149.965,149.969,190.473,100.002,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M117.371,89.84c11.086,0,20.102-9.02,20.102-20.113c0-11.078-9.016-20.098-20.102-20.098
+                                                                                    c-11.082,0-20.098,9.02-20.098,20.098c0,0.914,0.078,1.797,0.188,2.668L81.5,84.492c-3.277-2.309-7.27-3.688-11.57-3.688
+                                                                                    c-11.09,0-20.105,9.016-20.105,20.102s9.016,20.102,20.105,20.102c4.18,0,8.039-1.277,11.27-3.457l16.32,12.863
+                                                                                    c-0.156,0.984-0.246,1.992-0.246,3.016c0,11.094,9.016,20.117,20.098,20.117c11.086,0,20.102-9.023,20.102-20.117
+                                                                                    c0-11.074-9.016-20.094-20.102-20.094c-5.566,0-10.613,2.273-14.258,5.945l-14.371-11.328c0.828-2.195,1.281-4.562,1.281-7.047
+                                                                                    c0-2.348-0.414-4.594-1.152-6.688l13.996-10.613C106.523,87.438,111.668,89.84,117.371,89.84z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                        M99.992,190.477c-49.965,0-90.469-40.512-90.469-90.48c0-49.961,40.504-90.469,90.469-90.469
+                                                                                    c49.977,0,90.477,40.508,90.477,90.469C190.469,149.965,149.969,190.477,99.992,190.477z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.77,0,0,44.773,0,100s44.77,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                    M99.992,190.469c-49.973,0-90.465-40.5-90.465-90.469c0-49.965,40.492-90.469,90.465-90.469c49.969,0,90.473,40.504,90.473,90.469
+                                                                                    C190.465,149.969,149.961,190.469,99.992,190.469z"/>
+                                                                                <path fill="#C7C7C7" d="M109.75,73.871V62.297L64.258,76.961l45.492,14.688v-8.102c13.488,3.324,15.734,10.625,15.734,18.363
+                                                                                    c0,11.488-3.219,23.258-30.902,23.258c-0.402,0-5.816,0.012-11.266,0.012c-5.578,0.012-11.227,0.023-11.656,0.023
+                                                                                    c-2.582,0-4.695,2.102-4.695,4.695c0,2.586,2.105,4.699,4.688,4.699c0.438,0,6.074-0.012,11.656-0.023
+                                                                                    c5.457-0.012,10.844-0.012,11.262-0.012c27.059,0,40.312-10.984,40.312-32.652C134.883,83.805,123.238,76.621,109.75,73.871z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M133.84,67.188H66.277c-3.988,0-6.008,2.859-6.008,6.785v8.145c0,3.926,2.02,7.145,6.008,7.145h67.562
+                                                                                    c3.98,0,7.359-3.219,7.359-7.145v-8.145C141.199,70.047,137.82,67.188,133.84,67.188z"/>
+                                                                                <path fill="#C7C7C7" d="M122.797,133.398h-6.129V94.164h-11.043v39.234h-7.348V94.164H87.238v39.234h-7.348V94.164h-9.812v44.988
+                                                                                    c0,3.977,2.73,6.512,6.711,6.512h46.715c3.98,0,7.875-2.535,7.875-6.512V94.164h-8.582V133.398z"/>
+                                                                                <path fill="#C7C7C7" d="M95.527,63.516h12.684c3.066,0,5.551-2.453,5.551-5.523c0-3.062-2.484-5.512-5.551-5.512H95.527
+                                                                                    c-3.082,0-5.574,2.449-5.574,5.512C89.953,61.062,92.445,63.516,95.527,63.516z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                        M99.992,190.473c-49.957,0-90.473-40.508-90.473-90.477c0-49.965,40.516-90.465,90.473-90.465c49.977,0,90.48,40.5,90.48,90.465
+                                                                                    C190.473,149.965,149.969,190.473,99.992,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="comment-date mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-25">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                            <p class="text-white pt-2 mb-0 comment-content">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
-                                                            <h6 class="mb-1">Elizabeth Au Yeung Shing Yuet</h6>
+                                            </div>
+                                            <!-- Comment Section End -->
+                                            <!-- Comment Section without Reply Thread Start -->
+                                            <div class="row pb-4 d-table">
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 comment-profile py-2 d-table-cell">
+                                                    <img src="assets/images/instructors/tutor_7.png" alt="">
+                                                </div>
+                                                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 comment-meta d-table-cell">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-grey mb-0 instructor-replay-name">Kelvin Sun Ka Wan</h6>
+                                                            <h4 class="text-grey instructor-replay-title">课程導師</h4>
+                                                        </div>
+                                                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 comment-meta-btn d-flex align-items-center justify-content-center">
+                                                            <ul class="list-group list-group-horizontal list-unstyled">
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M126.211,94.91h-0.555H90.125c-1.266,0-2.18-1.574-2.18-2.84v-0.566c0-1.281,0.914-1.5,2.18-1.5h35.828
+                                                                                    V68.836c0-17.551-10.906-31.785-24.531-31.785c-13.617,0-24.516,14.234-24.516,31.785v25.562
+                                                                                    c-7.363,0.219-13.156,5.02-13.156,10.66c0,5.781,5.348,10.691,12.629,10.691h49.832c7.281,0,13.195-4.645,13.195-10.422
+                                                                                    C139.406,99.543,133.492,94.91,126.211,94.91z"/>
+                                                                                <path fill="#C7C7C7" d="M99.297,166.285c0.383,2.258,3.625,2.012,4-0.246c0,0,7.609-44.172,7.633-44.172H91.664
+                                                                                    C91.68,121.867,99.297,166.285,99.297,166.285z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.773,0,0,44.773,0,100s44.773,100,100,100s100-44.773,100-100S155.227,0,100,0z M99.992,190.465
+                                                                                    c-49.965,0-90.469-40.5-90.469-90.473c0-49.957,40.504-90.461,90.469-90.461c49.977,0,90.477,40.504,90.477,90.461
+                                                                                    C190.469,149.965,149.969,190.465,99.992,190.465z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M98.793,83.277v0.172C92.17,57.75,50.559,60.98,55.133,96.793c3.041,23.793,43.637,53.312,43.637,53.312
+                                                                                    s40.602-29.52,43.648-53.312C146.996,60.98,105.414,57.578,98.793,83.277z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.768,0,0,44.773,0,100s44.768,100,100,100c55.23,0,100-44.773,100-100S155.23,0,100,0z
+                                                                                        M100.002,190.473c-49.969,0-90.473-40.508-90.473-90.477c0-49.965,40.504-90.465,90.473-90.465
+                                                                                    c49.967,0,90.467,40.5,90.467,90.465C190.469,149.965,149.969,190.473,100.002,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M117.371,89.84c11.086,0,20.102-9.02,20.102-20.113c0-11.078-9.016-20.098-20.102-20.098
+                                                                                    c-11.082,0-20.098,9.02-20.098,20.098c0,0.914,0.078,1.797,0.188,2.668L81.5,84.492c-3.277-2.309-7.27-3.688-11.57-3.688
+                                                                                    c-11.09,0-20.105,9.016-20.105,20.102s9.016,20.102,20.105,20.102c4.18,0,8.039-1.277,11.27-3.457l16.32,12.863
+                                                                                    c-0.156,0.984-0.246,1.992-0.246,3.016c0,11.094,9.016,20.117,20.098,20.117c11.086,0,20.102-9.023,20.102-20.117
+                                                                                    c0-11.074-9.016-20.094-20.102-20.094c-5.566,0-10.613,2.273-14.258,5.945l-14.371-11.328c0.828-2.195,1.281-4.562,1.281-7.047
+                                                                                    c0-2.348-0.414-4.594-1.152-6.688l13.996-10.613C106.523,87.438,111.668,89.84,117.371,89.84z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                        M99.992,190.477c-49.965,0-90.469-40.512-90.469-90.48c0-49.961,40.504-90.469,90.469-90.469
+                                                                                    c49.977,0,90.477,40.508,90.477,90.469C190.469,149.965,149.969,190.477,99.992,190.477z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.77,0,0,44.773,0,100s44.77,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                    M99.992,190.469c-49.973,0-90.465-40.5-90.465-90.469c0-49.965,40.492-90.469,90.465-90.469c49.969,0,90.473,40.504,90.473,90.469
+                                                                                    C190.465,149.969,149.961,190.469,99.992,190.469z"/>
+                                                                                <path fill="#C7C7C7" d="M109.75,73.871V62.297L64.258,76.961l45.492,14.688v-8.102c13.488,3.324,15.734,10.625,15.734,18.363
+                                                                                    c0,11.488-3.219,23.258-30.902,23.258c-0.402,0-5.816,0.012-11.266,0.012c-5.578,0.012-11.227,0.023-11.656,0.023
+                                                                                    c-2.582,0-4.695,2.102-4.695,4.695c0,2.586,2.105,4.699,4.688,4.699c0.438,0,6.074-0.012,11.656-0.023
+                                                                                    c5.457-0.012,10.844-0.012,11.262-0.012c27.059,0,40.312-10.984,40.312-32.652C134.883,83.805,123.238,76.621,109.75,73.871z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="px-1 mx-1 mb-0 list-group-item">
+                                                                    <a href="#">
+                                                                        <svg class="comment-meta-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="15" cy="15" r="15" fill="#c6c6c6"/>
+                                                                        </svg>
+                                                                        <svg class="comment-meta-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                            width="30px" height="30px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                            <g>
+                                                                                <path fill="#C7C7C7" d="M133.84,67.188H66.277c-3.988,0-6.008,2.859-6.008,6.785v8.145c0,3.926,2.02,7.145,6.008,7.145h67.562
+                                                                                    c3.98,0,7.359-3.219,7.359-7.145v-8.145C141.199,70.047,137.82,67.188,133.84,67.188z"/>
+                                                                                <path fill="#C7C7C7" d="M122.797,133.398h-6.129V94.164h-11.043v39.234h-7.348V94.164H87.238v39.234h-7.348V94.164h-9.812v44.988
+                                                                                    c0,3.977,2.73,6.512,6.711,6.512h46.715c3.98,0,7.875-2.535,7.875-6.512V94.164h-8.582V133.398z"/>
+                                                                                <path fill="#C7C7C7" d="M95.527,63.516h12.684c3.066,0,5.551-2.453,5.551-5.523c0-3.062-2.484-5.512-5.551-5.512H95.527
+                                                                                    c-3.082,0-5.574,2.449-5.574,5.512C89.953,61.062,92.445,63.516,95.527,63.516z"/>
+                                                                                <path fill="#C7C7C7" d="M100,0C44.766,0,0,44.773,0,100s44.766,100,100,100c55.227,0,100-44.773,100-100S155.227,0,100,0z
+                                                                                        M99.992,190.473c-49.957,0-90.473-40.508-90.473-90.477c0-49.965,40.516-90.465,90.473-90.465c49.977,0,90.48,40.5,90.48,90.465
+                                                                                    C190.473,149.965,149.969,190.473,99.992,190.473z"/>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <p class="comment-date mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-25">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                            <p class="text-white pt-2 mb-0 comment-content">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Comment Section End -->
+
+                                        </div>
+                                    </div>
+                                    <div class="row course-structure-div d-none" id="course-structure-div">
+                                        <div class="col-12">
+                                            <!-- Course Structure List Item -->
+                                            <div class="row pb-4 course-structure-list-item">
+                                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 course-thumbnail py-2" style="background-image: url('assets/images/courses/course-thumbnail.jpg')">
+                                                </div>
+                                                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 comment-meta">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-white mb-2">1 - Inroduction</h6>
                                                             <h4 class="text-gold font-weight-bold hei-title">待酒师大师之路许可证准备</h4>
                                                         </div>
-                                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 course-price">
-                                                            <button class="DinConBold">HKD $200.00</button>
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-end course-structure-date">
+                                                            <p class="mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-25">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0 ">素材.zip</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">笔记.png</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">许可证教材.ppt</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 py-2">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mb-md-0 mb-2">
-                                                    <a href="#" class="btn course-add-cart text-white bg-gold letter-space-10">加進購物車</a>
+                                            <!-- End of Course Structure List Item -->
+                                            <!-- Course Structure List Item -->
+                                            <div class="row pb-4 course-structure-list-item">
+                                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 course-thumbnail py-2" style="background-image: url('assets/images/courses/course-thumbnail.jpg')">
                                                 </div>
-                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <a href="#" class="btn course-add-cart text-gold bg-grey letter-space-10">立即購買</a>
+                                                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 comment-meta">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-white mb-2">2 - Basic Makeup</h6>
+                                                            <h4 class="text-gold font-weight-bold hei-title">待酒师大师之路许可证准备</h4>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-end course-structure-date">
+                                                            <p class="mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-25">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">素材.zip</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">笔记.png</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-structure-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">许可证教材.ppt</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <!-- End of Course Structure List Item -->
                                         </div>
+                                    </div>
+                                    <div class="row course-certificate-div" id="course-certificate-div">
+                                        <div class="col-12">
+                                            <!-- Course Structure List Item -->
+                                            <div class="row pb-5 course-certificate-list-item">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                            <h6 class="text-white mb-2">Marcus Fung Hei Wing</h6>
+                                                            <h4 class="text-gold font-weight-bold hei-title">待酒师大师之路许可证准备</h4>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-end course-certificate-date">
+                                                            <p class="mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-75">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-certificate-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">检验一</p>
+                                                            </div>
+                                                            <div class="btn active">
+                                                                <a href="#">
+                                                                    <svg class="complete-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="complete-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#fff" d="M100,0C44.771,0,0,44.777,0,100c0,55.232,44.771,100,100,100c55.229,0,100-44.768,100-100
+                                                                                C200,44.777,155.229,0,100,0z M100,190.469c-49.97,0-90.47-40.498-90.47-90.469c0-49.96,40.5-90.463,90.47-90.463
+                                                                                c49.963,0,90.466,40.503,90.466,90.463C190.466,149.971,149.963,190.469,100,190.469z"/>
+                                                                            <path fill="#fff" d="M144.908,71.002c-3.91-2.983-10.125-1.426-13.879,3.501l-31.713,41.479L72.707,89.361
+                                                                                c-3.472-3.478-9.118-3.478-12.597,0c-3.479,3.475-3.479,9.115,0,12.587l33.059,33.051c3.059,3.069,7.78,3.427,11.244,1.122
+                                                                                c1.847-0.84,3.612-2.208,5.028-4.059l35.734-46.761C148.938,80.396,148.825,73.984,144.908,71.002z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-certificate-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">检验二</p>
+                                                            </div>
+                                                            <div class="btn active">
+                                                                <a href="#">
+                                                                    <svg class="complete-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="complete-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#fff" d="M100,0C44.771,0,0,44.777,0,100c0,55.232,44.771,100,100,100c55.229,0,100-44.768,100-100
+                                                                                C200,44.777,155.229,0,100,0z M100,190.469c-49.97,0-90.47-40.498-90.47-90.469c0-49.96,40.5-90.463,90.47-90.463
+                                                                                c49.963,0,90.466,40.503,90.466,90.463C190.466,149.971,149.963,190.469,100,190.469z"/>
+                                                                            <path fill="#fff" d="M144.908,71.002c-3.91-2.983-10.125-1.426-13.879,3.501l-31.713,41.479L72.707,89.361
+                                                                                c-3.472-3.478-9.118-3.478-12.597,0c-3.479,3.475-3.479,9.115,0,12.587l33.059,33.051c3.059,3.069,7.78,3.427,11.244,1.122
+                                                                                c1.847-0.84,3.612-2.208,5.028-4.059l35.734-46.761C148.938,80.396,148.825,73.984,144.908,71.002z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-certificate-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">检验三</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="complete-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="complete-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M100,0C44.771,0,0,44.777,0,100c0,55.232,44.771,100,100,100c55.229,0,100-44.768,100-100
+                                                                                C200,44.777,155.229,0,100,0z M100,190.469c-49.97,0-90.47-40.498-90.47-90.469c0-49.96,40.5-90.463,90.47-90.463
+                                                                                c49.963,0,90.466,40.503,90.466,90.463C190.466,149.971,149.963,190.469,100,190.469z"/>
+                                                                            <path fill="#C7C7C7" d="M144.908,71.002c-3.91-2.983-10.125-1.426-13.879,3.501l-31.713,41.479L72.707,89.361
+                                                                                c-3.472-3.478-9.118-3.478-12.597,0c-3.479,3.475-3.479,9.115,0,12.587l33.059,33.051c3.059,3.069,7.78,3.427,11.244,1.122
+                                                                                c1.847-0.84,3.612-2.208,5.028-4.059l35.734-46.761C148.938,80.396,148.825,73.984,144.908,71.002z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Course Structure List Item -->
+                                            <!-- Course Structure List Item -->
+                                            <div class="row pb-5 course-certificate-list-item">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="row py-2">
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                                            <h4 class="text-gold font-weight-bold hei-title">课程证书</h4>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-end course-certificate-date">
+                                                            <p class="mb-0 text-white">8 日前</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <hr class="bg-gold h-2 my-0">
+                                                            <div class="mr-auto w-75">
+                                                                <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-certificate-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">证书1.pdf</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="course-certificate-material-list">
+                                                            <div class="title">
+                                                                <p class="text-white py-2 mb-0">证书2.pdf</p>
+                                                            </div>
+                                                            <div class="btn">
+                                                                <a href="#">
+                                                                    <svg class="download-icon-bg" xmlns="http://www.w3.org/2000/svg" >
+                                                                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="14" cy="14" r="14" fill="#c6c6c6"/>
+                                                                    </svg>
+                                                                    <svg class="download-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                        width="60px" height="60px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                                                        <g>
+                                                                            <path fill="#C7C7C7" d="M99.999,0C44.769,0,0,44.772,0,99.999C0,155.226,44.769,200,99.999,200C155.229,200,200,155.226,200,99.999
+                                                                                C200,44.772,155.229,0,99.999,0z M99.991,190.471c-49.955,0-90.469-40.509-90.469-90.478c0-49.959,40.514-90.465,90.469-90.465
+                                                                                c49.979,0,90.477,40.506,90.477,90.465C190.468,149.962,149.97,190.471,99.991,190.471z"/>
+                                                                            <path fill="#C7C7C7" d="M168.498,109.703c-0.716-14.531-11.796-26.785-26.346-26.785c-1.159,0-2.252,0.031-3.376,0.182
+                                                                                c-3.055-18.956-19.458-33.468-39.276-33.468c-17.119,0-31.646,10.763-37.285,25.897c-17.283,1.375-30.254,15.789-30.254,33.394
+                                                                                c0,17.514,14.895,31.878,31.25,33.38v1.187h-1.179c0.912,0,1.84,0.136,2.786,0.136c0.93,0,1.856-0.136,2.786-0.136h74.547
+                                                                                C142.152,143.49,169.939,139.964,168.498,109.703z M100.255,126.469l-27.769-33.65h15.56V73.532h24.54v19.287h15.44
+                                                                                L100.255,126.469z"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End of Course Structure List Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 order-md-2 order-1 pb-md-0 pb-5">
+                                    <h3 class="text-gold text-center font-weight-bold hei-title">课程评分</h3>
+                                    <div class="course-rating-div">
+                                        <div class="d-flex align-items-center justify-content-center pt-5 pb-2">
+                                            <ul class="list-group list-group-horizontal list-unstyled">
+                                            <li class="px-1 mx-1 mb-0 list-group-item">
+                                                <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                            </li>
+                                            <li class="px-1 mx-1 mb-0 list-group-item">
+                                                <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                            </li>
+                                            <li class="px-1 mx-1 mb-0 list-group-item">
+                                                <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                            </li>
+                                            <li class="px-1 mx-1 mb-0 list-group-item">
+                                                <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                            </li>
+                                            <li class="px-1 mx-1 mb-0 list-group-item">
+                                                <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        <div class="align-items-center justify-content-center pb-5">
+                                            <p class="course-rating-score DinConBold mb-0">4.7/5</p>
+                                            <p class="dinpro text-grey mb-0 hei-title letter-space-5">(1116 個評分)</p>
+                                            <p class="dinpro text-grey mb-0 hei-title letter-space-5">500 名學生</p>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-gold text-center font-weight-bold mt-3 hei-title">置顶评论</h3>
+                                    <div class="course-pinned-comment-div p-3">
+                                        <!-- Start of pinned comment -->
+                                        <div class="row py-3">
+                                            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 pinned-comment-profile">
+                                                <h4 class="text-gold mb-0 instructor-replay-name">Kelvin Sun Ka Wan</h4>
+                                                <h4 class="text-gold mb-0 instructor-replay-title">课程導師</h4>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 pinned-comment-date d-flex align-items-end">
+                                                <p class="mb-0 mt-2 text-grey">8 日前</p>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                                                <hr class="bg-gold h-2 my-0">
+                                                <div class="mr-auto w-75">
+                                                    <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <p class="text-white pt-2 mb-0 pinned-comment-content">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                            </div>
+                                        </div>
+                                        <!-- End of pinned comment -->
+                                        <!-- Start of pinned comment -->
+                                        <div class="row py-3">
+                                            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 pinned-comment-profile">
+                                                <h4 class="text-grey mb-0">Kelvin Sun Ka Wan</h4>
+                                                <h4 class="text-grey mb-0">课程学生</h4>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 pinned-comment-date d-flex align-items-end">
+                                                <p class="mb-0 mt-2 text-grey">8 日前</p>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pt-3">
+                                                <hr class="bg-gold h-2 my-0">
+                                                <div class="mr-auto w-75">
+                                                    <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <p class="text-white pt-2 mb-0 pinned-comment-content">青山依舊在, 幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。滾滾長江東逝水，浪花淘盡英雄。是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，慣看秋月春風。</p>
+                                            </div>
+                                        </div>
+                                        <!-- End of pinned comment -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid instructor-bg">
+            </div>            <div class="container-fluid instructor-bg">
                 <div class="row justify-content-center pt-5">
                     <div class="col-lg-6">
                         <div class="primary-header">

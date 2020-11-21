@@ -35,10 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-0 main-navbar">
         <div class="container-xl menu_bar">
             <div class="collapse navbar-collapse justify-content-start" id="navbarsExample07XL">
-                <ul class="navbar-nav  mb-2 mb-lg-0 ">
-                    <li class="nav-item menu_link  mr-4">
-                        <a class="nav-link  grand-text" aria-current="page" href="#" style="letter-spacing: 2px !important;">Vip channel</a>
-                    </li>                    
+                <ul class="navbar-nav  mb-2 mb-lg-0 ">                   
                     <li class="nav-item dropdown menu_link">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                             課程種類
@@ -49,9 +46,13 @@
                             </li>
                         </ul>
                     </li>
+                                        <li class="nav-item menu_link  ml-4">
+                        <a class="nav-link  grand-text" aria-current="page" href="#" style="letter-spacing: 2px !important;">星級頻道</a>
+                    </li> 
                     <form class="form-inline ml-4">
-                        <input class="form-control search_input" type="search" placeholder="搜尋" aria-label="Search">
-                        <button class="btn search_button" type="submit"><img class="search_icon" src="assets/icons/search.svg" width="20px" height="20px"></button>
+                        
+                        <input class="form-control search_input" id="search_input" type="search" name="search_input" placeholder="" aria-label="Search">
+                        
                     </form>
                 </ul>
             </div>
@@ -60,7 +61,7 @@
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav  mb-2 mb-lg-0 ">
                     <li class="nav-item mr-3">
-                        <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">成為導師</a>
+                        <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">成為名師</a>
                     </li>
                     <li class="nav-item mr-3">
                         <a class="nav-link border border-radius-10 leterSpace_fix" aria-current="page" href="#">登入</a>
@@ -411,6 +412,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- End of listing container -->
                         <div class="row justify-content-center">
                             <div class="col-10 text-center">
@@ -425,9 +427,532 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-fluid container-xl course-instructor-intro">
+                            <div class="row justify-content-center pt-100 pb-50">
+                                <div class="col-lg-6">
+                                    <div class="primary-header">
+                                        <h1 class="text-center text-gold mb-5 letter-space-20 hei-title">熱門課程</h1>
+                                        <hr class="bg-gold h-2 my-0">
+                                        <div class="ml-auto mr-auto w-50">
+                                            <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="col-xl-12 course-carousel-div pt-3">
+                                <div class="row">
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-fluid container-xl course-instructor-intro">
+                            <div class="row justify-content-center pt-100 pb-50">
+                                <div class="col-lg-6">
+                                    <div class="primary-header">
+                                        <h1 class="text-center text-gold mb-5 letter-space-20 hei-title">即將上架課程</h1>
+                                        <hr class="bg-gold h-2 my-0">
+                                        <div class="ml-auto mr-auto w-50">
+                                            <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="col-xl-12 course-carousel-div pt-3">
+                                <div class="row">
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                        <div class="col-12 course-bookmark">
+                                                            <svg class="bookmark-icon-bg" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle id="Ellipse_2" data-name="Ellipse 2" cx="21" cy="21" r="21" fill="transparent" />
+                                                            </svg>
+                                                            <a href="#">
+                                                                <svg class="bookmark-icon" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Path_53" data-name="Path 53" d="M371.661,2933.972a19,19,0,1,0,19,19A19,19,0,0,0,371.661,2933.972Zm6.028,27.741a.676.676,0,0,1-.673.672l-5.177-6.747-5.376,6.747a.63.63,0,0,1-.618-.672v-15.847c0-.369.2-.4.566-.4h10.6c.37,0,.677.03.677.4Z" transform="translate(-352.661 -2933.972)" fill="#fff" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                <div class="col-12 px-0 mt-2">
+                                                    <a href="#">
+                                                        <h5 class="text-gold font-weight-bold mb-0">Javascript和React初學者訓練營</h5>
+                                                        <p class="text-grey ">Elizabeth Au Yeung Shing Yuet</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 px-0 pb-2">
+                                                    <hr class="bg-gold h-2 my-0">
+                                                    <div class="mr-auto w-25">
+                                                        <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 course-carousel-rating-score">
+                                                    <p class="text-gold dinpro mb-0">4.0/5</p>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating">
+                                                    <ul class="list-group list-group-horizontal list-unstyled">
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-full.svg" width="20px" height="20px">
+                                                        </li>
+                                                        <li class="px-1 mx-1 mb-0 list-group-item">
+                                                            <img src="assets/icons/rating-mark-half.svg" width="20px" height="20px">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 course-carousel-rating-meta">
+                                                    <p class="text-white hei-title mb-0 ">(1116個評分) 57459名學生</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-right">
+                                                    <button class="DinConBold course-carousel-price">HKD $200.00</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container-fluid container-xl course-instructor-intro">
+                            <div class="row justify-content-center pt-100 pb-50">
+                                <div class="col-lg-6">
+                                    <div class="primary-header">
+                                        <h1 class="text-center text-gold mb-5 letter-space-5 hei-title">All Master World 名師</h1>
+                                        <hr class="bg-gold h-2 my-0">
+                                        <div class="ml-auto mr-auto w-50">
+                                            <hr class="bg-gold h-6 my-0 nv-mt-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="col-xl-12 course-carousel-div pt-3">
+                                <div class="row">
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                              
+                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                    <!-- Start Carousel Item -->
+                                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 course-carousel-thumbnail p-sm-3 p-2" style="background-image: url('assets/images/courses/course_1.jpg')">
+                                                    <div class="row d-flex align-content-between h-100">
+                                                        <div class="col-12">
+                                                            <img class="staff-pick-badge" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row course-carousel-info d-flex align-items-center">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Carousel Item -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                               
             <div class="row justify-content-center">
                 <div class="col-lg-6 py-50">
                     <div class="primary-header">
