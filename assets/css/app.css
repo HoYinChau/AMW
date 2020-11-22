@@ -2430,3 +2430,11 @@ input[name=search_input]:focus {
 .navbar-dark .navbar-nav .nav-link{
     color: rgba(255,255,255,1) ;
 }
+.fixed-wts {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 20px;
+    z-index: 10;
+}
